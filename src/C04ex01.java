@@ -5,16 +5,17 @@ public class C04ex01 {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
 
-        System.out.print("Digite seu nome: ");
-        String nome = teclado.nextLine();
+        System.out.print("Digite seu primeiro nome: ");
+        String primeiroNome = teclado.nextLine();
         System.out.print("Digite seu nome do meio: ");
-        String nome2 = teclado.nextLine();
-        System.out.print("Digite o seu sobrenome: ");
+        String nomeMeio = teclado.nextLine();
+        System.out.print("Digite seu sobrenome: ");
         String sobrenome = teclado.nextLine();
-        System.out.print("Digite a sua idade: ");
+        System.out.print("Digite sua idade: ");
         int idade = teclado.nextInt();
 
-        System.out.print("O seu nome completo é: " + nome + " " + nome2 + " " + sobrenome + " e você tem " + idade + " anos");
+        System.out.println("Seu nome completo é " + primeiroNome + " " + nomeMeio + " " + sobrenome);
+        System.out.println("E você tem " + idade + " anos");
         teclado.close();
     }
 }
